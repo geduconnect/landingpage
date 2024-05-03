@@ -1,0 +1,586 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    border-bottom: 1px solid wheat;
+}
+
+.navbar-brand .img-fluid {
+    padding: 10px;
+    width: 300px;
+    height: 100px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu li {
+    padding: 20px;
+    list-style: none;
+    font-size: 18px;
+}
+
+.carousel-upper {
+    background-image: url('./carousel-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+
+    color: #fff;
+
+    /* filter: blur(0.5px); */
+    width: 100%;
+}
+
+.carousel {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    /* ma: 50px; */
+    justify-content: space-around;
+}
+
+.img-carousel {
+    padding: 50px 50px 0 0;
+}
+
+.content-carousel {
+    max-width: 500px;
+    text-align: left;
+
+}
+
+.upper-content h3 {
+    font-size: 42px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.upper-content h3 span {
+    color: brown;
+}
+
+.lower-content h2 {
+    padding: 10px 0;
+    font-size: 32px;
+
+}
+
+.lower-content p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.form-carousel {
+    margin: 20px;
+    padding: 10px;
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    background: #fff;
+    color: #000;
+    text-align: left;
+}
+
+.form-carousel h2 {
+    padding: 20px;
+    margin: 5px;
+}
+
+.signup-form-wrapper {
+    padding: 20px;
+
+}
+
+.signup-form-wrapper input {
+    margin: 5px;
+
+    padding: 10px;
+    width: 300px;
+
+}
+
+select {
+    margin: 5px;
+    width: 300px;
+
+
+    padding: 10px;
+
+}
+
+.signup-form-wrapper button {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    width: 300px;
+    margin: 5px;
+
+    background: yellowgreen;
+}
+
+.carousel-lower {
+    padding: 20px 50px;
+    opacity: 0.7;
+    color: #000;
+    font-size: 28px;
+    background: whitesmoke;
+    font-weight: 700;
+}
+
+.about-container {
+    padding: 20px 50px;
+
+}
+
+.about-content h1 {
+    padding: 10px 0;
+    font-style: 42px;
+    font-weight: bold;
+    color: brown;
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.check-box {
+    padding: 10px;
+}
+
+.about-paragraph {
+    width: 600px;
+    text-align: justify;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.about-image img {
+    width: 500px;
+    height: 500px;
+}
+
+.courses {
+    padding: 20px 50px;
+
+}
+
+.courses-title {
+    padding: 20px;
+}
+
+.courses-title h2 {
+    padding: 10px 0;
+    font-size: 52px;
+    font-weight: 500;
+}
+
+.courses-title p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.programs-container {
+    /* width: 1000px; */
+    height: auto;
+    margin: auto;
+
+
+}
+
+.programs-card {
+    display: inline-flex;
+    background: #fff;
+    width: 300px;
+    margin: 20px;
+    border-radius: 20px;
+    height: 300px;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgb(0 0 0 / 15%);
+
+}
+
+.img-box img {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.programs-card h3 {
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.whyus {
+    padding: 20px 50px;
+
+
+}
+
+.why-head h2 {
+    font-size: 46px;
+    font-weight: 400;
+}
+
+.why-head h2 span {
+    color: brown;
+}
+
+.why-hr {
+    margin: 10px;
+    height: 5px;
+    background: red;
+    width: 500px;
+}
+
+.why-body {
+    display: flex;
+
+    margin: 20px;
+}
+
+.why-left {
+
+    border-radius: 10px;
+    width: 800px;
+    height: auto;
+}
+
+.whyuscard {
+    background: #fff;
+    display: inline-flex;
+    border: 1px solid;
+    width: 150px;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    height: 100px;
+}
+
+.right-image img {
+    height: 400px;
+    width: 400px;
+}
+
+/* Style the tab */
+.courses-tab {
+    display: flex;
+    width: 300px;
+    border-radius: 20px;
+    height: auto;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.courses-tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px;
+    transition: 0.3s;
+    font-size: 22px;
+}
+
+/* Change background color of buttons on hover */
+.courses-tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.courses-tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    background-color: #fff;
+    width: 1000px;
+    border-radius: 20px;
+    padding: 40px;
+    border-top: none;
+}
+
+.courses-body {
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgb(0 0 0 / 15%);
+    border-radius: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.courses-content {
+    padding: auto;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+.tabcontent h3 {
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 42px;
+}
+
+.courses-box {
+    padding: 20px 0;
+}
+
+.courses-box h4 {
+    padding: 10px 0;
+    font-size: 28px;
+}
+
+.courses-box p {
+    font-size: 18px;
+}
+
+.courses-box li {
+    font-size: 18px;
+}
+
+table {
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.exam-pattern td,
+th {
+    width: 300px;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 30px;
+    text-align: left;
+    width: 100%;
+
+    border: none;
+    margin: 10px 0;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 30px;
+    display: none;
+    width: auto;
+    text-align: justify;
+    background-color: white;
+    overflow: hidden;
+}
+
+.accordian-container {
+    padding: 20px 50px;
+    width: 800px;
+
+}
+
+.accordian-container h2 {
+    padding: 10px 0;
+    font-size: 32px;
+
+}
+
+footer {
+    background: #fff;
+    padding: 50px;
+    display: flex;
+}
+
+.footer-area {
+    padding-top: 50px;
+
+
+
+}
+
+.grid {
+    display: grid;
+    max-width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+.footer-img img {
+    width: 200px;
+    height: 200px;
+}
+
+.footer-widget {
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+.footer-widget p {
+    color: #a2a2a2;
+    margin-bottom: 30px
+}
+
+.footer-widget h3 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 20px
+}
+
+.footer-widget ul li {
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.footer-widget ul li:last-child {
+    margin-bottom: 0
+}
+
+.footer-widget ul li a {
+    color: #a2a2a2;
+    text-decoration: none
+}
+
+.footer-widget ul li a:hover {
+    color: #fff
+}
+
+.footer-icon {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+
+.footer-icon li {
+    color: #a8adb7;
+    background: #fff;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    border-radius: 20px;
+}
+
+.footer-icon li:hover {
+    background: #2467ec;
+    color: #fff
+}
+
+
+.section-subtitle,
+.section-title {
+    color: #fff;
+}
+
+@media (max-width: 720px) {
+
+    .footer-icon li {
+        color: #a8adb7;
+        background: #fff;
+
+        line-height: auto;
+
+    }
+
+
+}
+
+
+.footer-subtitle {
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.footer-title {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 0;
+
+    color: #fff;
+
+}
+
+.footer-widget i {
+    padding-right: 10px;
+}
+
+.admission-card p {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+.img-box {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgb(0 0 0 / 5%);
+
+}
+
+.img-box img {
+    padding: 20px;
+
+    width: 100px;
+    height: 100px;
+}
+
+.admission-process {
+    padding: 20px 50px;
+}
+
+.admission-process h2 {
+    padding: 10px 0;
+    font-size: 32px;
+}
+
+.admission-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
