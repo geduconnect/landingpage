@@ -6,47 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CDOE VGU</title>
     <link href="./style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="nav-navbar">
-        <nav class="navbar">
-            <div className="navbar-brand">
-                <a href="#">
-                    <img className="img-fluid" src='./vgu-logo.png' alt="" />
-                </a>
+    <div class="Navbar">
+        <div class="Navbar__Link Navbar__Link-brand">
+            <a href="#">
+                <img className="img-fluid" src='./vgu-logo.png' alt="" />
+            </a>
+        </div>
+        <div class="Navbar__Link Navbar__Link-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="Navbar__Items">
+            <div class="Navbar__Link">
+                Home
             </div>
-            <div className="menu" onClick={}>
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="Navbar__Link">
+                About Us
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    Home
-                </li>
-                <li class="nav-item">
-                    About Us
-                </li>
-                <li class="nav-item">
-                    Programs
-                </li>
-                <li class="nav-item">
-                    Faq
-                </li>
-                <li class="nav-item">
-                    Learning Support Services
-                </li>
-                <li class="nav-item">
-                    Faculty List
-                </li>
-                <li class="nav-item">
-                    Contact
-                </li>
-
-
-            </ul>
+            <div class="Navbar__Link">
+                Programs
+            </div>
+            <div class="Navbar__Link">
+                Faq
+            </div>
+            <div class="Navbar__Link">
+                Learning Support Services
+            </div>
         </nav>
+      
     </div>
     <div class="carousel-upper">
         <div class="carousel">
@@ -872,6 +864,14 @@
             }
         });
     }
+    function classToggle() {
+        const navs = document.querySelectorAll('.Navbar__Items')
+
+        navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+    }
+
+    document.querySelector('.Navbar__Link-toggle')
+        .addEventListener('click', classToggle);
 </script>
 
 </html>
