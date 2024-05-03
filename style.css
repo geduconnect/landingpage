@@ -3,11 +3,14 @@
     margin: 0;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-around;
+.Navbar {
     background: #fff;
     border-bottom: 1px solid wheat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
 }
 
 .navbar-brand .img-fluid {
@@ -16,15 +19,90 @@
     height: 100px;
 }
 
-.nav-menu {
+.Navbar__Link {
+    padding: 20px;
+    list-style: none;
+    font-size: 18px;
     display: flex;
     justify-content: space-between;
 }
 
-.nav-menu li {
-    padding: 20px;
-    list-style: none;
-    font-size: 18px;
+.Navbar__Items {
+
+    display: flex;
+}
+
+.Navbar__Items--right {
+    margin-left: auto;
+}
+
+.Navbar__Link-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .Navbar__Items,
+    .Navbar {
+        flex-direction: column;
+    }
+
+    .Navbar__Items {
+        display: none;
+    }
+
+    .Navbar__Items--right {
+        margin-left: 0;
+    }
+
+    .Navbar__ToggleShow {
+        display: flex;
+    }
+
+    .Navbar__Link-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .carousel {
+        margin: 20px;
+        flex-direction: column;
+    }
+
+    .about-us {
+        margin: 20px;
+
+        flex-direction: column;
+    }
+    .about-paragraph{
+        width: 100%;
+    }
+    .why-body{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .why-left{
+        width: auto;
+        flex-direction: column;
+    }
+    .courses-body{
+        display: flex;flex-direction: column;
+    }
+    .tabcontent{
+        max-width: auto;
+    }
+    .admission-container{
+   
+        flex-direction: column;
+    }
+    .admission-card{
+        padding: auto;
+        margin: 50px 0;
+    }
 }
 
 .carousel-upper {
